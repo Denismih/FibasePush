@@ -12,9 +12,12 @@
 		841D751421134AD70026A6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841D751221134AD70026A6CA /* Main.storyboard */; };
 		841D751621134AD90026A6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D751521134AD90026A6CA /* Assets.xcassets */; };
 		841D751921134AD90026A6CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841D751721134AD90026A6CA /* LaunchScreen.storyboard */; };
+		841D752121134B410026A6CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841D752021134B410026A6CA /* GoogleService-Info.plist */; };
+		93E4A61ACE942C8C70011E42 /* Pods_FibasePush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D039E6DD4C21E7B8A9281F /* Pods_FibasePush.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3192D8599F758AE4AD88542F /* Pods-FibasePush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FibasePush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FibasePush/Pods-FibasePush.debug.xcconfig"; sourceTree = "<group>"; };
 		841D750B21134AD70026A6CA /* FibasePush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FibasePush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841D750E21134AD70026A6CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		841D751021134AD70026A6CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		841D751521134AD90026A6CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841D751821134AD90026A6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841D751A21134AD90026A6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841D752021134B410026A6CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3D039E6DD4C21E7B8A9281F /* Pods_FibasePush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FibasePush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2ED3DC141F14F0EB707C8FC /* Pods-FibasePush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FibasePush.release.xcconfig"; path = "Pods/Target Support Files/Pods-FibasePush/Pods-FibasePush.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E4A61ACE942C8C70011E42 /* Pods_FibasePush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510412D9A77007B5E5D5A105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3192D8599F758AE4AD88542F /* Pods-FibasePush.debug.xcconfig */,
+				F2ED3DC141F14F0EB707C8FC /* Pods-FibasePush.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		740414F16935B3187A7E90D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D039E6DD4C21E7B8A9281F /* Pods_FibasePush.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		841D750221134AD70026A6CA = {
 			isa = PBXGroup;
 			children = (
 				841D750D21134AD70026A6CA /* FibasePush */,
 				841D750C21134AD70026A6CA /* Products */,
+				510412D9A77007B5E5D5A105 /* Pods */,
+				740414F16935B3187A7E90D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				841D751521134AD90026A6CA /* Assets.xcassets */,
 				841D751721134AD90026A6CA /* LaunchScreen.storyboard */,
 				841D751A21134AD90026A6CA /* Info.plist */,
+				841D752021134B410026A6CA /* GoogleService-Info.plist */,
 			);
 			path = FibasePush;
 			sourceTree = "<group>";
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 841D751D21134AD90026A6CA /* Build configuration list for PBXNativeTarget "FibasePush" */;
 			buildPhases = (
+				E238D1BC22D9CEE23CCD1B0E /* [CP] Check Pods Manifest.lock */,
 				841D750721134AD70026A6CA /* Sources */,
 				841D750821134AD70026A6CA /* Frameworks */,
 				841D750921134AD70026A6CA /* Resources */,
+				CDE8A493852A9349467A7740 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				841D751921134AD90026A6CA /* LaunchScreen.storyboard in Resources */,
+				841D752121134B410026A6CA /* GoogleService-Info.plist in Resources */,
 				841D751621134AD90026A6CA /* Assets.xcassets in Resources */,
 				841D751421134AD70026A6CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDE8A493852A9349467A7740 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FibasePush/Pods-FibasePush-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FibasePush/Pods-FibasePush-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E238D1BC22D9CEE23CCD1B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FibasePush-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		841D750721134AD70026A6CA /* Sources */ = {
@@ -278,6 +349,7 @@
 		};
 		841D751E21134AD90026A6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3192D8599F758AE4AD88542F /* Pods-FibasePush.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +367,7 @@
 		};
 		841D751F21134AD90026A6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2ED3DC141F14F0EB707C8FC /* Pods-FibasePush.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
